@@ -1,0 +1,26 @@
+<header>
+  <nav style="height: 100px;" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container mx-0">
+          <a class="navbar-brand" href="/"><span style="font-size: 60px;">Nagano Cake</span></a>
+          <div class="navbar-brand ml-5">ようこそ！</div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li>
+              <%= link_to root_path,class: 'nav-link text-light' do %>
+                <i class="fas fa-home"></i> Home
+              <% end %>
+            </li>
+            <li>
+              <%= link_to home_about_path,class: 'nav-link text-light' do %>
+                <i class="fas fa-link"></i> About
+              <% end %>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+</header>
