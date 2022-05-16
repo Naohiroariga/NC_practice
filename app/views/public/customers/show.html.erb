@@ -1,0 +1,64 @@
+<div class="container">
+  <h1>マイページ</h1>
+
+  <div class="d-flex flex-row">
+   <h2 class="mr-3" >登録情報</h2>
+   <div class="btn btn-success">編集する</div>
+  </div>
+
+  <table class="table table-bordered mt-3">
+    <tr>
+      <td>
+        氏名
+      </td>
+      <td>
+        <%= current_customer.family_name %> <%= current_customer.name %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        カナ
+      </td>
+      <td>
+        <%= current_customer.family_name_kana %> <%= current_customer.name_kana %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        郵便番号
+      </td>
+      <td>
+        <%= current_customer.postal_code %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        住所
+      </td>
+      <td>
+        <%= current_customer.address %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        電話番号
+      </td>
+      <td>
+        <%= current_customer.telephone_number %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        メールアドレス
+      </td>
+      <td>
+        <%= current_customer.email %>
+      </td>
+    </tr>
+</table>
+
+<%= link_to destroy_customer_session_path, method: :delete do %>
+  <i class="fas fa-sign-out-alt"></i> logout
+<% end %>
+
+</div>
